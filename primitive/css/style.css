@@ -1,0 +1,575 @@
+/* --------- Reset css --------- */
+* {
+  margin : 0;
+  padding : 0;
+}
+
+/* --------- Layout --------- */
+html, body {	
+  background-color : #ffffff;
+	padding : 0;	
+	color : #222222;
+	font-family : verdana, helvetica, sans-serif;
+	font-size : .9em;
+}
+#xo-canvas {}
+#xo-canvas-content {}
+#xo-page {padding-top : 0px;}
+
+/* --------- Hypertext links --------- */
+a {  
+	background-color : inherit;
+	color: #0000EE;
+}
+a:hover {text-decoration : none;}
+
+/* --------- Titles --------- */
+h1 {
+  font-size : 1.4em;
+  font-weight : bold;
+}
+h2 {font-size : 1.2em;}
+h3 {
+  padding-bottom : 3px;
+  font-size : 1em;  
+}
+h4 {font-size : 1em;}
+h5 {font-size : .9em;}
+h6 {font-size : .8em;}
+
+/* --------- Images --------- */
+img {
+  position : relative;
+  border : 0;  
+}
+
+/* --------- Paragraph */
+p {	
+	margin-bottom : 15px;
+	line-height : 22px;
+}
+
+/* --------- Lists --------- */
+#xo-canvas-content ul {
+	margin-bottom : 15px;
+	padding-left : 15px;
+	list-style : disc;
+}
+#xo-canvas-content li {
+  margin-left : 2px;
+  background-color : inherit;
+  color : #0000EE;
+  line-height : 1.4em;
+  list-style :	disc inside;
+}
+
+/* --------- Forms --------- */
+fieldset {
+	margin : 0 0 1em 0;
+	padding : 1em;
+	border : 1px solid #ddd;
+}
+legend {
+  padding : 0 3px 0 3px;
+  color : #444;
+	font-size : .9em;
+	font-weight : bold;
+}
+label {font-weight : bold;}
+input {
+  margin-right : 3px;
+  background-color : #f2f2f2;
+	font-size : 1em;
+	border : 1px solid #ccc;
+}
+select {
+  background-color :	#f6f6f6;
+	color : #000;
+	border : 1px solid #ccc;
+	font-size : .9em;
+}
+textarea {
+	width :  85%;
+	height : 110px;
+	margin : 0.5em 0.5em 0.5em 0;	
+	padding : 5px;	
+	color : #222;
+	border : 1px solid #ccc;
+	overflow : auto;
+}
+
+/* --------- Others --------- */
+acronym, abbr, dfn {
+  border-bottom : 1px dotted #333;
+  cursor : help;
+}
+q, cite, em, dfn, strong {font-style : italic;}
+strong, dfn {font-weight : bold;}
+del {text-decoration : line-through;}
+address {
+  font-style : normal;
+  letter-spacing : .1em;
+}
+hr {display : none;}
+
+/* ---------  Show class --------- */
+.clear {
+  clear : both;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearleft{
+  clear : left;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.clearright{
+  clear : right;
+  height : 0;
+  line-height : 0;
+  font-size : 0;  
+}
+.block {display : block;}
+.hide {display : none;}
+.spacer {padding : 0 0 3px 0;}
+.floatleft {
+	float : left;
+	margin-top : 1em;
+	margin-right : 1em;
+	padding-left : 4px;
+	border : 0;
+}
+.floatright {
+	float : right;
+	margin-bottom : 1em;
+	margin-left : 1em;
+	padding : 2px;
+	border : 0;
+}
+
+/* --------- Font class --------- */
+.extrasmall {font-size : .7em;}
+.small {font-size : .9em;}
+.normal {font-size : 1em;}
+.big {font-size : 1.2em;}
+.maxi {font-size : 1.5em;}
+
+.bold {font-weight : bold;}
+.italic {font-style : italic;}
+.underline {text-decoration : underline;}
+
+/* --------- Header --------- */
+#xo-header {
+	background-color : #0022aa;	
+	padding : 30px 40px 30px 40px;
+	color : #fff;
+}
+/* Logo */
+#xo-header h1 {font-size : 30px;}
+/* Slogan */
+#xo-header h2 {font-size : 14px;}
+/* Banner */
+#xo-header .banner {
+  position : relative;
+  float : right;
+  top : 0;
+  right : 70px;  
+}
+/* Navigation menu */
+#xo-globalnav {	
+	margin-bottom : 30px;	
+	background-color : #f5f5f5;
+	padding : 5px 30px 0px 30px;
+	color : #222222;
+	border-bottom : solid 1px #DADADA;
+}
+#xo-globalnav div {clear : both;}
+#xo-globalnav ul {
+  position : relative;
+  top : 1px;
+	display : block;
+	margin-bottom : 0px;
+	padding : 0px;
+	list-style : none;	
+}	
+#xo-globalnav ul li {
+	position : relative;
+	float : left;
+	margin-right : 5px;
+	border : solid 1px #dadada;
+	border-bottom : 0px;	
+}
+#xo-globalnav ul li a {
+	display : block;
+	background-color : inherit;
+	padding : 5px 10px 8px 10px;
+	color : #333333;
+	text-decoration : none;
+}
+#xo-globalnav ul li a:hover {
+	background-color : #0022AA;
+	color : #fff;
+}
+#xo-globalnav ul li.active, #xo-globalnav ul li.active a, #xo-globalnav ul li.active a:hover {
+	background-color : #ffffff;
+	color : #333333;
+}
+
+/* --------- Left columns --------- */
+#xo-canvas-leftcolumn {
+  width : 200px;
+  padding : 0 8px 0 10px;
+  border-right : 1px solid #f2f2f2;
+}
+#xo-canvas-leftcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0;
+  padding : 3px;  
+  color : #222;
+  text-align : center;
+  font-weight : bold;  
+}
+#xo-canvas-leftcolumn .xo-blockcontent {  
+  margin-bottom : 10px;
+  padding : 3px;
+  line-height : 1.2em;
+}
+
+/* --------- Right columns --------- */
+#xo-canvas-rightcolumn {
+  width : 200px;
+  padding : 0 10px 0 8px;
+  border-left : 1px solid #f2f2f2;
+}
+#xo-canvas-rightcolumn h3.xo-blocktitle {
+  margin : 0 0 5px 0; 
+  padding : 3px;
+  color : #222;
+  text-align : center;
+  font-weight : bold;  
+}
+#xo-canvas-rightcolumn .xo-blockcontent {
+  margin-bottom : 10px;
+  padding : 3px;
+  line-height : 1.2em;
+}
+
+/* --------- Center blocks --------- */
+#xo-page .xo-block {margin : 5px;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks h3.xo-blocktitle, #xo-bottomcenterblocks h3.xo-blocktitle {
+  margin : 5px;
+  padding-left : 10px;
+  color : #222;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topcenterblocks .xo-blockcontent, #xo-bottomcenterblocks .xo-blockcontent {
+  padding : 5px 8px 8px 8px;
+  margin-bottom : 5px;
+  line-height : 1.5em;  
+  text-align : justify;
+  font-size : .9em;
+}
+#xo-topleftblocks, #xo-bottomleftblocks, #xo-toprightblocks, #xo-bottomrightblocks {width : 49.5%;}
+#xo-topleftblocks h3.xo-blocktitle, #xo-bottomleftblocks h3.xo-blocktitle,
+#xo-toprightblocks h3.xo-blocktitle, #xo-bottomrightblocks h3.xo-blocktitle{
+  margin : 5px;
+  padding-left : 10px;
+  color : #222;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+#xo-topleftblocks .xo-blockcontent, #xo-toprightblocks .xo-blockcontent,
+#xo-bottomleftblocks .xo-blockcontent, #xo-bottomrightblocks .xo-blockcontent {
+  margin-bottom : 5px;
+  padding : 5px 8px 8px 8px;
+  line-height : 1.5em;
+  text-align : justify;
+  font-size : .9em;
+}
+
+/* --------- Content module page --------- */
+#xo-content {
+  padding : 8px;
+  text-align : justify;  
+}
+
+/* --------- Footer --------- */
+#xo-footer {
+  clear: both;
+  margin : 20px 0px 10px 0px;
+	padding-top : 15px;
+	text-align : center;
+	border-top : solid 1px #DADADA;	
+}
+#xo-logger-output{font-size : .9em;}
+
+/* --------- Redirect page (system_redirect.html) --------- */
+#xo-redirect {
+  margin : 10px 80px 10px 80px;
+  background-color : #fafafa;
+  padding : 8px;
+  line-height : 1.4em;
+  text-align : center;
+  border : 1px solid #ddd;
+}
+/* --------- Site closed page (system_siteclosed.html) --------- */
+#xo-siteclosed {
+  margin : 10px 200px 10px 200px;
+  background-color : #fafafa;
+  padding : 8px;
+  line-height : 1.6em;
+  text-align: center;
+  border : 1px solid #ddd;
+}
+#xo-siteclosed strong {
+  display : block;
+  font-style : normal;
+}
+#xo-siteclosed label {
+  font-size : .9em;
+  font-weight : normal;
+}
+#xo-siteclosed input {margin : 2px;}
+
+/* --------- Block main menu --------- */
+#mainmenu {font-size : .9em;}
+#mainmenu a {
+  display : block;
+  margin-bottom : 4px;
+  background-color : #f5f5f5;
+  padding : 3px;
+  color : #222;
+  text-decoration : none;
+  border : 1px solid #dadada;
+}
+#mainmenu a:hover {
+  background-color : #0022AA;
+  color : #fff;
+}
+#mainmenu a.menuTop {padding-left : 5px;}
+#mainmenu a.menuMain {padding-left : 5px;}
+#mainmenu a.menuSub {  
+  background-color : #fff;
+  padding-left : 12px;
+  font-size : .9em;
+  font-style : italic;
+}
+#mainmenu a.menuSub:hover {
+  background-color : #fff;
+  color : #222;
+  text-decoration : underline;
+}
+
+/* --------- Block user menu --------- */
+#usermenu {font-size : .8em;}
+#usermenu a {
+  display : block;
+  margin : 0;    
+  padding : 3px 3px 3px 6px;
+  color : #222;
+  text-decoration : none;
+  border-bottom : 1px dotted #222;
+}
+#usermenu a:hover {
+  color : #0022AA;
+  text-decoration : underline;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+  background-color : #596FC8;
+  color : #fff;
+}
+
+/* --------- Tables and cells --------- */
+table {width : 100%;}
+table td {
+  padding : 0;
+  vertical-align : top;
+  border-width : 0;  
+}
+th {
+  background-color : #0022AA;
+  padding : 2px;
+  color : #fff;  
+  vertical-align : middle;
+}
+th a {color : #fff;}
+.outer {}
+.head {
+  background-color : #f2f2f2;
+  padding : 5px;
+  font-weight : bold;
+}
+.even {
+  background-color : #fafafa;
+  padding : 5px;
+}
+.odd {
+  background-color : #f9f9f9;
+  padding : 5px;
+}
+.foot {
+  background-color : #f2f2f2;
+  padding : 5px;
+  font-weight : bold;
+}
+tr.even td {
+  background-color : #fafafa;
+  padding : 5px;
+}
+tr.odd td {
+  background-color : #f9f9f9;
+  padding : 5px;
+}
+
+/* --------- Core messages --------- */
+.errorMsg {
+  background-color : #FFCCCC;
+  padding : 10px;
+  text-align : center;
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;
+  font-weight : bold;  
+}
+.confirmMsg {
+  background-color : #DDFFDF;
+  padding : 10px;
+  color : #136C99;  
+  text-align : center;
+  font-weight : bold; 
+  border-top : 1px solid #DDDDFF;
+  border-left : 1px solid #DDDDFF;
+  border-right : 1px solid #aaa;
+  border-bottom : 1px solid #aaa;   
+}
+.resultMsg {
+  background-color : #c1c1c1;
+  padding : 10px;
+  color : #333;
+  text-align : center;
+  font-weight : bold;
+  border-top : 1px solid #ccc;
+  border-left : 1px solid #ccc;  
+  border-right : 1px solid #666;
+  border-bottom : 1px solid #666;  
+}
+
+/* --------- Codes and Quotes --------- */
+.xoopsCode {
+  max-height : 200px;
+  margin : 6px;
+  background-color : #fafafa;
+  padding : 6px; 
+  overflow : auto;
+  color : #666;
+  font-family : "Lucida Console", "courier new", monospace;
+  font-size : .9em; 
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #0022AA; 
+}
+.xoopsQuote {
+  margin : 6px;
+  background: #fafafa url("../img/quote.gif") no-repeat 5px 10px;  
+  padding : 6px 6px 6px 40px;  
+  font-style : italic;
+  border : 1px solid #e1e1e1;
+  border-left : 3px solid #0022AA; 
+}
+
+/* --------- Articles --------- */
+.item {margin-bottom : 15px;}
+.itemHead {
+  padding : 3px;  
+  color : #222;
+  font-size : 1em;
+}
+.itemInfo { 
+  background-color : #fff;
+  padding : 3px;
+  text-align : right; 
+}
+.itemTitle a {
+  background-color : transparent;
+  color : #222;
+  text-decoration : none;
+  font-size : 1.1em;
+  font-weight : bold;
+}
+.itemPoster {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemPostDate {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemStats {
+  font-size : .9em;
+  font-style : italic;
+}
+.itemBody {padding-left : 3px;}
+.itemText {
+  margin-top : 5px;
+  margin-bottom : 5px;
+  padding : 0 5px 0 5px;
+  line-height : 1.5em;
+}
+.itemFoot {  
+  background-color : #f5f5f5;
+  padding : 3px;
+  text-align : right; 
+  border : 1px solid #dadada;
+}
+.itemAdminLink {font-size : .9em;}
+.itemPermaLink {font-size : .9em;}
+
+/* --------- Forums and Comments --------- */
+.comTitle {
+  margin-bottom : 2px;
+  font-weight : bold;  
+}
+.comText {padding : 2px;}
+.comUserStat {
+  margin : 2px; 
+  background-color : #fff;
+  padding : 2px;  
+  color : #0022AA;
+  font-size : .7em;
+  font-weight : bold;
+  border : 1px solid #ccc;   
+}
+.comUserStatCaption {font-weight : normal;}
+.comUserStatus {
+  margin-left : 2px;
+  margin-top : 10px;
+  color : #639ACC;
+  font-weight : bold;
+  font-size : .8em;
+}
+.comUserRank {margin : 2px;}
+.comUserRankText {
+  font-size : .8em;
+  font-weight : bold;
+}
+.comUserRankImg {border : 0;}
+.comUserName {}
+.comUserImg {margin : 2px;}
+.comDate {
+  font-weight : normal;
+  font-style : italic;
+  font-size : .8em;
+}  
+.comDateCaption {
+  font-weight : bold;
+  font-style : normal;
+  font-size : .8em;
+}
+.signature {
+  font-size : .8em;
+  font-style : italic;
+}
